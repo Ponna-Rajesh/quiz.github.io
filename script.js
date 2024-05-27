@@ -62,7 +62,33 @@ document.querySelector(".submitBtn").addEventListener("click", () => {
     submit.style.display = "block"
 })
 
-//
+document.querySelector(".btnEnd").addEventListener("click", () => {
+    const submit =  document.querySelector(".hidden-box")
+    submit.style.display = "none"
+
+    const res =  document.querySelector(".result-wrap")
+        res.style.display = "block"
+})
+
+
+document.querySelector(".startAgain").addEventListener("click", () => {
+    const main = document.querySelector(".one-box")
+    main.style.display = "block"
+
+    const submit =  document.querySelector(".hidden-box")
+    submit.style.display = "none"
+
+    const res =  document.querySelector(".result-wrap")
+        res.style.display = "none"
+})
+
+
+
+
+
+
+
+//Caluclator
 function clearDisplay() {
     document.getElementById('display').value = '';
   }
