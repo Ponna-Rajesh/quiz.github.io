@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Quiz Craze</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<main>
+
+    <div class="Header"> 
+        <h1>Quiz Craze</h1>
+    </div>
+
+    <div class="one-box">
+
+        <div class="input-Box">
+            <div>
+                <input type="search" class="serach-info-box" placeholder="Search Quiz">
+                <button class="serach-btn" ><i class="fa fa-search"></i></button>
+            </div>
+            
+        </div>
+
+        <div class="card-qun">
+            <h1>Get Questions</h1>
+
+            <div class="chooseQuiz">
+                <form>
+                <div class="info-quiz">
+                    <label  class="Choose" for="quns">Select Category</label>
+                    <select id="quns" name="quns"  class="custom-select quiz-container">
+                        <option class="data-c" value="select">Any Category</option>
+                    </select>
+                </div>
+                </form>
+            </div>
+
+            <div>
+                <form>
+                    <div class="info-quiz">
+                    <label  class="Choose" for="mod-quns">Select Diffculty</label>
+                    <select id="mode-quns" name="mode-quns" class="custom-select">
+                        <option class="data-c"value="select">Any Difficulty</option>
+                        <option value="easy">easy</option>
+                        <option value="medium">medium</option>
+                        <option value="hard">hard</option>
+                    </select>
+                </form>
+                </div>
+
+
+            <div>
+                <form>
+                <div class="info-quiz">
+                    <label  class="Choose" for="mod-quns">No Of Question</label>
+                    <select id="mode-quns" name="mode-quns" class="custom-select">
+                        <option class="data-c"value="select">No of Question</option>
+                        <option class="data-c"value="select">2</option>
+                        <option value="three">4</option>
+                        <option value="one">6</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="submitBtn">START</button>
+
+</main>
+
+<div class="hidden-box">
+    <div class="qun-container">
+        <div class="qun-card">
+            <div class="Timer">
+                <h1>Timer : <span>15</span></h1>
+            </div>
+            <div class="question">
+                What is the Javascript ?
+            </div>
+            <ul class="choices">
+                <li>
+                    <label>
+                        <input type="radio" name="answer" value="A">
+                        PRogramming Langague
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="answer" value="B">
+                        Frontend Langague
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="answer" value="C">
+                        Use to Develop APIs
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="radio" name="answer" value="D">
+                        All the Above
+                    </label>
+                </li>
+            </ul>
+            <button class="submit-button">Next</button>
+            <button class="submit-button">Submit</button>
+        </div>
+        <div class="calculator">
+            <input type="text" class="display" id="display" readonly>
+            <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('/')">/</button>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('*')">*</button>
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('-')">-</button>
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="appendValue('+')">+</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    
+</div>
+
+
+<script src="script.js"></script>   
+</body>
+</html>

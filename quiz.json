@@ -1,0 +1,871 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "HTML",
+            "questions": [
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "What does HTML stand for?",
+                    "correct_answer": "HyperText Markup Language",
+                    "incorrect_answers": [
+                        "Hyperlinks and Text Markup Language",
+                        "Home Tool Markup Language",
+                        "Hyperlinking Text Markup Language"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "Who is making the Web standards?",
+                    "correct_answer": "The World Wide Web Consortium",
+                    "incorrect_answers": [
+                        "Mozilla",
+                        "Google",
+                        "Microsoft"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "Choose the correct HTML element for the largest heading:",
+                    "correct_answer": "<h1>",
+                    "incorrect_answers": [
+                        "<heading>",
+                        "<h6>",
+                        "<head>"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "What is the correct HTML element for inserting a line break?",
+                    "correct_answer": "<br>",
+                    "incorrect_answers": [
+                        "<break>",
+                        "<lb>",
+                        "<linebreak>"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "What is the correct HTML for adding a background color?",
+                    "correct_answer": "<body style='background-color:yellow;'>",
+                    "incorrect_answers": [
+                        "<body bg='yellow'>",
+                        "<background>yellow</background>",
+                        "<bgcolor>yellow</bgcolor>"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "Which HTML element defines the title of a document?",
+                    "correct_answer": "<title>",
+                    "incorrect_answers": [
+                        "<head>",
+                        "<meta>",
+                        "<header>"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "How can you make a numbered list?",
+                    "correct_answer": "<ol>",
+                    "incorrect_answers": [
+                        "<ul>",
+                        "<list>",
+                        "<dl>"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "Which is the correct HTML element for playing video files?",
+                    "correct_answer": "<video>",
+                    "incorrect_answers": [
+                        "<media>",
+                        "<movie>",
+                        "<play>"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "What is the correct HTML element for playing audio files?",
+                    "correct_answer": "<audio>",
+                    "incorrect_answers": [
+                        "<sound>",
+                        "<mp3>",
+                        "<play>"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "Which attribute specifies the path to an image in HTML?",
+                    "correct_answer": "src",
+                    "incorrect_answers": [
+                        "alt",
+                        "href",
+                        "path"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "Which HTML attribute is used to define inline styles?",
+                    "correct_answer": "style",
+                    "incorrect_answers": [
+                        "class",
+                        "font",
+                        "styles"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "What does the <iframe> tag do?",
+                    "correct_answer": "Defines an inline frame",
+                    "incorrect_answers": [
+                        "Defines a frame set",
+                        "Defines an image frame",
+                        "Defines a border frame"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "Which of these elements are all <table> elements?",
+                    "correct_answer": "<table><tr><td>",
+                    "incorrect_answers": [
+                        "<table><head><tfoot>",
+                        "<thead><body><tr>",
+                        "<table><tr><tt>"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "How can you make a numbered list?",
+                    "correct_answer": "<ol>",
+                    "incorrect_answers": [
+                        "<list>",
+                        "<dl>",
+                        "<ul>"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "What is the correct HTML for making a checkbox?",
+                    "correct_answer": "<input type='checkbox'>",
+                    "incorrect_answers": [
+                        "<checkbox>",
+                        "<check>",
+                        "<input type='check'>"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "CSS",
+            "questions": [
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "What does CSS stand for?",
+                    "correct_answer": "Cascading Style Sheets",
+                    "incorrect_answers": [
+                        "Creative Style Sheets",
+                        "Colorful Style Sheets",
+                        "Computer Style Sheets"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "Which HTML attribute is used to define inline styles?",
+                    "correct_answer": "style",
+                    "incorrect_answers": [
+                        "class",
+                        "font",
+                        "styles"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "Where in an HTML document is the correct place to refer to an external style sheet?",
+                    "correct_answer": "In the <head> section",
+                    "incorrect_answers": [
+                        "In the <body> section",
+                        "At the end of the document",
+                        "You can't refer to an external style sheet"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "Which HTML tag is used to define an internal style sheet?",
+                    "correct_answer": "<style>",
+                    "incorrect_answers": [
+                        "<css>",
+                        "<script>",
+                        "<link>"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "Which is the correct CSS syntax?",
+                    "correct_answer": "body {color: black;}",
+                    "incorrect_answers": [
+                        "{body;color:black;}",
+                        "{body:color=black;}",
+                        "body:color=black;"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "Which property is used to change the background color?",
+                    "correct_answer": "background-color",
+                    "incorrect_answers": [
+                        "color",
+                        "bgcolor",
+                        "background"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "Which CSS property controls the text size?",
+                    "correct_answer": "font-size",
+                    "incorrect_answers": [
+                        "text-size",
+                        "font-style",
+                        "text-style"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "Which CSS property is used to change the text color of an element?",
+                    "correct_answer": "color",
+                    "incorrect_answers": [
+                        "text-color",
+                        "fgcolor",
+                        "font-color"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "Which property is used to change the font of an element?",
+                    "correct_answer": "font-family",
+                    "incorrect_answers": [
+                        "font-weight",
+                        "font-style",
+                        "font-type"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "How do you make each word in a text start with a capital letter?",
+                    "correct_answer": "text-transform:capitalize",
+                    "incorrect_answers": [
+                        "text-transform:uppercase",
+                        "text-transform:lowercase",
+                        "text-transform:capitalise"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "Which CSS property is used to change the text color of an element?",
+                    "correct_answer": "color",
+                    "incorrect_answers": [
+                        "fgcolor",
+                        "text-color",
+                        "font-color"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "Which property is used to change the left margin of an element?",
+                    "correct_answer": "margin-left",
+                    "incorrect_answers": [
+                        "padding-left",
+                        "padding",
+                        "margin"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "How do you select an element with id 'demo'?",
+                    "correct_answer": "#demo",
+                    "incorrect_answers": [
+                        ".demo",
+                        "*demo",
+                        "demo"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "Which CSS property controls the text size?",
+                    "correct_answer": "font-size",
+                    "incorrect_answers": [
+                        "text-size",
+                        "font-style",
+                        "text-style"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "What is the default value of the position property?",
+                    "correct_answer": "static",
+                    "incorrect_answers": [
+                        "absolute",
+                        "relative",
+                        "fixed"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "JavaScript",
+            "questions": [
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "Inside which HTML element do we put the JavaScript?",
+                    "correct_answer": "<script>",
+                    "incorrect_answers": [
+                        "<js>",
+                        "<scripting>",
+                        "<javascript>"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "Which operator is used to assign a value to a variable?",
+                    "correct_answer": "=",
+                    "incorrect_answers": [
+                        "*",
+                        "-",
+                        "x"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "How do you create a function in JavaScript?",
+                    "correct_answer": "function myFunction()",
+                    "incorrect_answers": [
+                        "function:myFunction()",
+                        "function = myFunction()",
+                        "createFunction myFunction()"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "How do you call a function named 'myFunction'?",
+                    "correct_answer": "myFunction()",
+                    "incorrect_answers": [
+                        "call function myFunction()",
+                        "call myFunction()",
+                        "Call.myFunction()"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "easy",
+                    "question": "How to write an IF statement in JavaScript?",
+                    "correct_answer": "if (i == 5)",
+                    "incorrect_answers": [
+                        "if i = 5",
+                        "if i == 5 then",
+                        "if i = 5 then"
+                    ]
+                }
+            ],
+            "medium": [
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "How can you add a comment in JavaScript?",
+                    "correct_answer": "// This is a comment",
+                    "incorrect_answers": [
+                        "<!-- This is a comment -->",
+                        "'This is a comment",
+                        "** This is a comment"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "What is the correct way to write a JavaScript array?",
+                    "correct_answer": "var colors = ['red', 'green', 'blue']",
+                    "incorrect_answers": [
+                        "var colors = 'red', 'green', 'blue'",
+                        "var colors = (1:'red', 2:'green', 3:'blue')",
+                        "var colors = 'red', 'green', 'blue'"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "How do you round the number 7.25 to the nearest integer?",
+                    "correct_answer": "Math.round(7.25)",
+                    "incorrect_answers": [
+                        "Math.rnd(7.25)",
+                        "Math.rounded(7.25)",
+                        "round(7.25)"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "How do you find the number with the highest value of x and y?",
+                    "correct_answer": "Math.max(x, y)",
+                    "incorrect_answers": [
+                        "Math.ceil(x, y)",
+                        "Math.highest(x, y)",
+                        "Math.largest(x, y)"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "medium",
+                    "question": "Which event occurs when the user clicks on an HTML element?",
+                    "correct_answer": "onclick",
+                    "incorrect_answers": [
+                        "onchange",
+                        "onmouseclick",
+                        "onmouseover"
+                    ]
+                }
+            ],
+            "hard": [
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "Which built-in method returns the calling string value converted to lower case?",
+                    "correct_answer": "toLowerCase()",
+                    "incorrect_answers": [
+                        "toLower()",
+                        "changeCase(case)",
+                        "None of the above"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "Which of the following function of Boolean object returns a string containing the source of the Boolean object?",
+                    "correct_answer": "toSource()",
+                    "incorrect_answers": [
+                        "valueOf()",
+                        "toString()",
+                        "None of the above"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "Which of the following is a valid type of function javascript supports?",
+                    "correct_answer": "Both named and anonymous",
+                    "incorrect_answers": [
+                        "Named function",
+                        "Anonymous function",
+                        "None of the above"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "Which built-in method sorts the elements of an array?",
+                    "correct_answer": "sort()",
+                    "incorrect_answers": [
+                        "changeOrder(order)",
+                        "order()",
+                        "None of the above"
+                    ]
+                },
+                {
+                    "type": "multiple",
+                    "difficulty": "hard",
+                    "question": "Which of the following statements is correct about JavaScript?",
+                    "correct_answer": "JavaScript is an object-based language",
+                    "incorrect_answers": [
+                        "JavaScript is an assembly-language",
+                        "JavaScript is an object-oriented language",
+                        "JavaScript is a High-level language"
+                    ]
+                }
+            ]
+        },
+        {
+            "category": "Python",
+            "difficulty_levels": {
+                "easy": [
+                    {
+                        "type": "multiple",
+                        "difficulty": "easy",
+                        "question": "What is the correct file extension for Python files?",
+                        "correct_answer": ".py",
+                        "incorrect_answers": [
+                            ".pt",
+                            ".pyt",
+                            ".p"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "easy",
+                        "question": "Which keyword is used to create a function in Python?",
+                        "correct_answer": "def",
+                        "incorrect_answers": [
+                            "function",
+                            "fun",
+                            "define"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "easy",
+                        "question": "How do you insert COMMENTS in Python code?",
+                        "correct_answer": "# This is a comment",
+                        "incorrect_answers": [
+                            "// This is a comment",
+                            "/* This is a comment */",
+                            "<!-- This is a comment -->"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "easy",
+                        "question": "Which method can be used to remove any whitespace from both the beginning and the end of a string?",
+                        "correct_answer": "strip()",
+                        "incorrect_answers": [
+                            "trim()",
+                            "len()",
+                            "stripspace()"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "easy",
+                        "question": "Which operator is used to assign a value to a variable?",
+                        "correct_answer": "=",
+                        "incorrect_answers": [
+                            "==",
+                            "===",
+                            "<-"
+                        ]
+                    }
+                ],
+                "medium": [
+                    {
+                        "type": "multiple",
+                        "difficulty": "medium",
+                        "question": "What is the output of the following code: print(2 * 3 ** 2)?",
+                        "correct_answer": "18",
+                        "incorrect_answers": [
+                            "36",
+                            "12",
+                            "14"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "medium",
+                        "question": "How do you start a for loop in Python?",
+                        "correct_answer": "for x in range(6):",
+                        "incorrect_answers": [
+                            "for x in 6:",
+                            "for x range(6):",
+                            "foreach x in range(6):"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "medium",
+                        "question": "What is the correct way to create a function in Python?",
+                        "correct_answer": "def my_function():",
+                        "incorrect_answers": [
+                            "function my_function():",
+                            "create my_function():",
+                            "def myFunction():"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "medium",
+                        "question": "Which of the following is a mutable data type in Python?",
+                        "correct_answer": "List",
+                        "incorrect_answers": [
+                            "Tuple",
+                            "String",
+                            "Integer"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "medium",
+                        "question": "Which of the following functions can be used to generate a sequence of numbers?",
+                        "correct_answer": "range()",
+                        "incorrect_answers": [
+                            "list()",
+                            "tuple()",
+                            "set()"
+                        ]
+                    }
+                ],
+                "hard": [
+                    {
+                        "type": "multiple",
+                        "difficulty": "hard",
+                        "question": "Which module in Python is used for regular expressions?",
+                        "correct_answer": "re",
+                        "incorrect_answers": [
+                            "regex",
+                            "pyregex",
+                            "express"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "hard",
+                        "question": "How do you create a dictionary in Python?",
+                        "correct_answer": "{ 'name': 'John', 'age': 36 }",
+                        "incorrect_answers": [
+                            "[ 'name': 'John', 'age': 36 ]",
+                            "( 'name': 'John', 'age': 36 )",
+                            "< 'name': 'John', 'age': 36 >"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "hard",
+                        "question": "What is the output of the following code: print(len('Hello World!'))?",
+                        "correct_answer": "12",
+                        "incorrect_answers": [
+                            "11",
+                            "13",
+                            "10"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "hard",
+                        "question": "Which of the following is not a keyword in Python?",
+                        "correct_answer": "eval",
+                        "incorrect_answers": [
+                            "assert",
+                            "pass",
+                            "lambda"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "hard",
+                        "question": "What is the correct way to open a file for reading in Python?",
+                        "correct_answer": "open('filename', 'r')",
+                        "incorrect_answers": [
+                            "open('filename', 'w')",
+                            "open('filename')",
+                            "read('filename')"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "category": "Java",
+            "difficulty_levels": {
+                "easy": [
+                    {
+                        "type": "multiple",
+                        "difficulty": "easy",
+                        "question": "Which company developed Java?",
+                        "correct_answer": "Sun Microsystems",
+                        "incorrect_answers": [
+                            "Microsoft",
+                            "Apple",
+                            "Google"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "easy",
+                        "question": "What is the extension of Java bytecode files?",
+                        "correct_answer": ".class",
+                        "incorrect_answers": [
+                            ".java",
+                            ".js",
+                            ".byte"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "easy",
+                        "question": "Which of these is not a Java keyword?",
+                        "correct_answer": "include",
+                        "incorrect_answers": [
+                            "if",
+                            "import",
+                            "double"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "easy",
+                        "question": "Which method is the entry point of a Java program?",
+                        "correct_answer": "main",
+                        "incorrect_answers": [
+                            "start",
+                            "begin",
+                            "init"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "easy",
+                        "question": "Which keyword is used to inherit a class in Java?",
+                        "correct_answer": "extends",
+                        "incorrect_answers": [
+                            "implements",
+                            "inherits",
+                            "derives"
+                        ]
+                    }
+                ],
+                "medium": [
+                    {
+                        "type": "multiple",
+                        "difficulty": "medium",
+                        "question": "Which of these classes are part of Java Collections Framework?",
+                        "correct_answer": "ArrayList",
+                        "incorrect_answers": [
+                            "HashMap",
+                            "Hashtable",
+                            "Vector"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "medium",
+                        "question": "Which package contains the Random class?",
+                        "correct_answer": "java.util",
+                        "incorrect_answers": [
+                            "java.lang",
+                            "java.io",
+                            "java.net"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "medium",
+                        "question": "Which interface does java.util.HashSet implement?",
+                        "correct_answer": "Set",
+                        "incorrect_answers": [
+                            "List",
+                            "Map",
+                            "Collection"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "medium",
+                        "question": "What is the default value of a boolean variable in Java?",
+                        "correct_answer": "false",
+                        "incorrect_answers": [
+                            "true",
+                            "0",
+                            "null"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "medium",
+                        "question": "Which keyword is used to create an instance of a class in Java?",
+                        "correct_answer": "new",
+                        "incorrect_answers": [
+                            "create",
+                            "make",
+                            "class"
+                        ]
+                    }
+                ],
+                "hard": [
+                    {
+                        "type": "multiple",
+                        "difficulty": "hard",
+                        "question": "Which of these methods belong to the String class?",
+                        "correct_answer": "substring()",
+                        "incorrect_answers": [
+                            "append()",
+                            "insert()",
+                            "delete()"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "hard",
+                        "question": "Which of these exceptions is thrown by the read() method of InputStream class?",
+                        "correct_answer": "IOException",
+                        "incorrect_answers": [
+                            "FileNotFoundException",
+                            "NullPointerException",
+                            "ArithmeticException"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "hard",
+                        "question": "What will be the output of: System.out.println(10 + 20 + \"30\");?",
+                        "correct_answer": "3030",
+                        "incorrect_answers": [
+                            "102030",
+                            "30",
+                            "Error"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "hard",
+                        "question": "Which of the following is not a type of inner class in Java?",
+                        "correct_answer": "Static inner class",
+                        "incorrect_answers": [
+                            "Local inner class",
+                            "Member inner class",
+                            "Anonymous inner class"
+                        ]
+                    },
+                    {
+                        "type": "multiple",
+                        "difficulty": "hard",
+                        "question": "What does the 'volatile' keyword in Java do?",
+                        "correct_answer": "Ensures visibility of changes to variables across threads",
+                        "incorrect_answers": [
+                            "Makes a variable immutable",
+                            "Protects a variable from being accessed by multiple threads",
+                            "Synchronizes method calls"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
