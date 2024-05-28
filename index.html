@@ -7,7 +7,7 @@
     <title>Quiz Craze</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bodyBOX">
 
 <main>
 
@@ -33,7 +33,12 @@
                 <div class="info-quiz">
                     <label  class="Choose" for="quns">Select Category</label>
                     <select id="quns" name="quns"  class="custom-select quiz-container">
-                        <option class="data-c" value="select">Any Category</option>
+                        <option class="data-c" value="Any Category">Any Category</option>
+                        <option class="data-c" value="HTML">HTML</option>
+                        <option class="data-c" value="CSS">CSS</option>
+                        <option class="data-c" value="Python">PYTHON</option>
+                        <option class="data-c" value="JavaScript">JAVASCRIPT</option>
+                        <option class="data-c" value="Java">JAVA</option>
                     </select>
                 </div>
                 </form>
@@ -43,8 +48,8 @@
                 <form>
                     <div class="info-quiz">
                     <label  class="Choose" for="mod-quns">Select Diffculty</label>
-                    <select id="mode-quns" name="mode-quns" class="custom-select">
-                        <option class="data-c"value="select">Any Difficulty</option>
+                    <select id="mode-quns" name="mode-quns" class="custom-select mode-of-test">
+                        <option class="data-c"value="Any Difficulty">Any Difficulty</option>
                         <option value="easy">easy</option>
                         <option value="medium">medium</option>
                         <option value="hard">hard</option>
@@ -53,25 +58,51 @@
                 </div>
 
 
-            <div>
+            <!-- <div>
                 <form>
                 <div class="info-quiz">
                     <label  class="Choose" for="mod-quns">No Of Question</label>
-                    <select id="mode-quns" name="mode-quns" class="custom-select">
-                        <option class="data-c"value="select">No of Question</option>
-                        <option class="data-c"value="select">2</option>
-                        <option value="three">4</option>
-                        <option value="one">6</option>
+                    <select id="mode-quns" name="mode-quns" class="custom-select num-qun">
+                        <option class="data-c" value="select">No of Question</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
                 </form>
-            </div>
+            </div> -->
+
         </div>
 
+        <button id="startBtn" class="submitBtn" disabled>START</button>
     </div>
 
-    <button class="submitBtn">START</button>
+    
 
 </main>
+
+
+<div class="guide-line-card">
+    <div>
+        <h3>Some Rules of this Quiz</h3>
+    </div>
+    <div>
+        <ol>
+            <li>You wil have only <span>15 seconds</span> seconds per each question.</li>
+            <li>Once you select your answer, it can't be undone.</li>
+            <li>You can't select any option once time goes off.</li>
+            <li>You can't exit from the Quiz while you're playing.</li>
+            <li>You will get points on the basis of your correct answers..</li>
+        </ol>
+    </div>
+    <div class="guide-btn">
+        <button class="guide-exit">Exit Quiz</button>
+        <button class="guide-con">Continue</button>
+    </div>
+
+</div>
+
+
 
 <div class="hidden-box">
     <div class="qun-container">
@@ -83,7 +114,7 @@
                 What is the Javascript ?
             </div>
             <ul class="choices">
-                <li>
+                <!-- <li>
                     <label>
                         <input type="radio" name="answer" value="A">
                         PRogramming Langague
@@ -106,9 +137,9 @@
                         <input type="radio" name="answer" value="D">
                         All the Above
                     </label>
-                </li>
+                </li> -->
             </ul>
-            <button class="submit-button">Next</button>
+            <button class="submit-button btnNext">Next</button>
             <button class="submit-button  btnEnd">Submit</button>
         </div>
         <div class="calculator">

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +9,7 @@
 body, html {
     width: 100%;
     height: 100%;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .Header {
@@ -233,7 +233,9 @@ body, html {
     display: none;
 }
 
-
+.btnEnd{
+  display: none;
+}
 
 .calculator {
     width: 300px;
@@ -323,3 +325,62 @@ body, html {
     }
   }
   
+
+  .guide-line-card{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 700px;
+    margin: 10rem auto;
+    display: none;
+    color: #000;
+  }
+
+  .guide-line-card h3{
+    padding: 1.33rem;
+    font-size: 1.45rem;
+  }
+
+.guide-btn{
+    padding: .77rem;
+    text-align: right;
+}
+
+  .guide-line-card ol{
+    border-top: 1px solid #b8b5b5;
+    border-bottom: 1px solid #b8b5b5;
+    padding: 1rem;
+  }
+
+  .guide-line-card li{
+    margin-left: 5%;
+    padding: .22rem;
+  }
+
+  .guide-line-card span{
+    color: blue;
+    font-weight: 450;
+  }
+
+
+  .guide-con{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: .25rem;
+    padding: 12px 1.25rem;
+    cursor: pointer;
+  }
+
+  .guide-exit{
+    background-color: #fff;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+    outline: none;
+    border-radius: .25rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    cursor: pointer;
+  }

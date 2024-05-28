@@ -3,7 +3,8 @@
     "results": [
         {
             "category": "HTML",
-            "questions": [
+            "difficulty_levels": {
+            "easy":[
                 {
                     "type": "multiple",
                     "difficulty": "easy",
@@ -58,7 +59,9 @@
                         "<background>yellow</background>",
                         "<bgcolor>yellow</bgcolor>"
                     ]
-                },
+                }
+            ],
+            "medium":[
                 {
                     "type": "multiple",
                     "difficulty": "medium",
@@ -113,7 +116,10 @@
                         "href",
                         "path"
                     ]
-                },
+                }
+            ],
+            "hard":[    
+               
                 {
                     "type": "multiple",
                     "difficulty": "hard",
@@ -170,10 +176,12 @@
                     ]
                 }
             ]
+        }
         },
         {
             "category": "CSS",
-            "questions": [
+            "difficulty_levels":{
+                "easy":[
                 {
                     "type": "multiple",
                     "difficulty": "easy",
@@ -228,7 +236,9 @@
                         "{body:color=black;}",
                         "body:color=black;"
                     ]
-                },
+                }
+            ],
+            "medium":[
                 {
                     "type": "multiple",
                     "difficulty": "medium",
@@ -251,6 +261,7 @@
                         "text-style"
                     ]
                 },
+            
                 {
                     "type": "multiple",
                     "difficulty": "medium",
@@ -283,7 +294,9 @@
                         "text-transform:lowercase",
                         "text-transform:capitalise"
                     ]
-                },
+                }
+            ],
+            "hard":[
                 {
                     "type": "multiple",
                     "difficulty": "hard",
@@ -340,10 +353,12 @@
                     ]
                 }
             ]
-        },
+        }
+    },
         {
             "category": "JavaScript",
-            "questions": [
+            "difficulty_levels": {
+                "easy":[
                 {
                     "type": "multiple",
                     "difficulty": "easy",
@@ -514,6 +529,7 @@
                     ]
                 }
             ]
+        }
         },
         {
             "category": "Python",
