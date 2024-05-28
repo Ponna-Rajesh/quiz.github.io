@@ -3,6 +3,50 @@ const fetchData = async () => {
     const json = await response.json();
     filterTheData(json.results)
 } 
+//Search
+document.querySelector(".serach-btn").addEventListener('click', () => {
+  const searchBox = document.querySelector('.serach-info-box');
+  const searchQuery = searchBox.value.toLowerCase();
+  const selectElement = document.querySelector(".quiz-container");
+  const options = selectElement.querySelectorAll('option');
+
+  let matchFound = false;
+
+  options.forEach(option => {
+      if (option.value.toLowerCase() === searchQuery) {
+          selectElement.value = option.value;
+          matchFound = true;
+      }
+  });
+
+  if (!matchFound) {
+      alert("QUIZ ONLY AVAILABLE FOR HTML, CSS, JS, PYTHON, AND JAVA");
+  }
+
+  searchBox.value = ""; 
+});
+
+// -----------------------------------------------------------------------------------------------------------------
+
+
+//CHECking....
+const updateStartButtonState = () => {
+  const categoryElement = document.querySelector(".quiz-container");
+  const difficultyElement = document.querySelector(".mode-of-test");
+  const startBtn = document.getElementById("startBtn");
+  if (categoryElement.value === "Any Category" || difficultyElement.value === "Any Difficulty" ) {
+      startBtn.disabled = true;
+      startBtn.style.opacity = "0.5";
+  } else {
+      startBtn.disabled = false;
+      startBtn.style.opacity = "1";
+  }
+
+};
+document.querySelector(".quiz-container").addEventListener("click", updateStartButtonState);
+document.querySelector(".mode-of-test").addEventListener("click", updateStartButtonState);
+updateStartButtonState();
+
 
 document.querySelector(".submitBtn").addEventListener("click", () => {
   const main = document.querySelector(".one-box")
@@ -49,48 +93,8 @@ document.querySelector(".guide-con").addEventListener("click", () => {
 
 })
 
-document.querySelector(".btnEnd").addEventListener("click", () => {
-  const submit =  document.querySelector(".hidden-box")
-  submit.style.display = "none"
 
-  const res =  document.querySelector(".result-wrap")
-      res.style.display = "block"
-})
-
-document.querySelector(".startAgain").addEventListener("click", () => {
-  const main = document.querySelector(".one-box")
-  main.style.display = "block"
-
-  const submit =  document.querySelector(".hidden-box")
-  submit.style.display = "none"
-
-  const res =  document.querySelector(".result-wrap")
-      res.style.display = "none"
-
-      location.reload()
-})
-
-
-
-
-//CHECking....
-const updateStartButtonState = () => {
-  const categoryElement = document.querySelector(".quiz-container");
-  const difficultyElement = document.querySelector(".mode-of-test");
-  const startBtn = document.getElementById("startBtn");
-  if (categoryElement.value === "Any Category" || difficultyElement.value === "Any Difficulty" ) {
-      startBtn.disabled = true;
-      startBtn.style.opacity = "0.5";
-  } else {
-      startBtn.disabled = false;
-      startBtn.style.opacity = "1";
-  }
-
-};
-document.querySelector(".quiz-container").addEventListener("click", updateStartButtonState);
-document.querySelector(".mode-of-test").addEventListener("click", updateStartButtonState);
-updateStartButtonState();
-
+// ---------------------------------------------------------------------------------------------------------------------------------
 
 //Filtered the data what we clicked in Home Page
 const filterTheData = (data) => {
@@ -112,7 +116,30 @@ const filterTheData = (data) => {
 }
 
 
-// QUESTIONS 
+
+document.querySelector(".btnEnd").addEventListener("click", () => {
+  const submit =  document.querySelector(".hidden-box")
+  submit.style.display = "none"
+
+  const res =  document.querySelector(".result-wrap")
+      res.style.display = "block"
+})
+
+document.querySelector(".startAgain").addEventListener("click", () => {
+    const main = document.querySelector(".one-box")
+    main.style.display = "block"
+
+    const submit =  document.querySelector(".hidden-box")
+    submit.style.display = "none"
+
+    const res =  document.querySelector(".result-wrap")
+    res.style.display = "none"
+
+      location.reload()
+})
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------
 
 function showQuestions(questions) {
   if (questions.length === 0) {
@@ -166,29 +193,7 @@ function showQuestions(questions) {
 document.querySelector('.filter-button').addEventListener('click', filterTheData);
 
 
-
-//Search
-document.querySelector(".serach-btn").addEventListener('click', () => {
-    const searchBox = document.querySelector('.serach-info-box');
-    const searchQuery = searchBox.value.toLowerCase();
-    const selectElement = document.querySelector(".quiz-container");
-    const options = selectElement.querySelectorAll('option');
-
-    let matchFound = false;
-
-    options.forEach(option => {
-        if (option.value.toLowerCase() === searchQuery) {
-            selectElement.value = option.value;
-            matchFound = true;
-        }
-    });
-
-    if (!matchFound) {
-        alert("QUIZ ONLY AVAILABLE FOR HTML, CSS, JS, PYTHON, AND JAVA");
-    }
-
-    searchBox.value = ""; 
-});
+// -------------------------------------------------------------------------------------------------------------------------------
 
 
 //Caluclator
