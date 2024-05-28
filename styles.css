@@ -235,6 +235,16 @@ body, html {
 
 .btnEnd{
   display: none;
+  width: 200px;
+  margin: auto;
+  padding: 10px;
+  background-color: #3824cd;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-bottom: 1rem;
 }
 
 .calculator {

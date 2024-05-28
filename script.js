@@ -44,7 +44,7 @@ const updateStartButtonState = () => {
 
 };
 document.querySelector(".quiz-container").addEventListener("click", updateStartButtonState);
-document.querySelector(".mode-of-test").addEventListener("click", updateStartButtonState);
+document.querySelector(".mode-of-test").addEventListener("change", updateStartButtonState);
 updateStartButtonState();
 
 
