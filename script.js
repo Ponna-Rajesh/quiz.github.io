@@ -1,8 +1,16 @@
+
+document.addEventListener("DOMContentLoaded", () => {
+  fetchData(); // Fetch data and filter questions
+  findAnswer(); // Attach event listeners to choices
+});
+
 const fetchData = async () => {
     const response = await fetch("quiz.json");
     const json = await response.json();
     filterTheData(json.results)
 } 
+
+
 //Search
 document.querySelector(".serach-btn").addEventListener('click', () => {
   const searchBox = document.querySelector('.serach-info-box');
@@ -112,9 +120,111 @@ const filterTheData = (data) => {
     const filteredQuestions = difficultyLevels[selectedDifficulty] || [];
     console.log(filteredQuestions)
     showQuestions(filteredQuestions)
+}
+
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------
+
+function showQuestions(questions) {
+
+  console.log(questions)
+  let currentQuestionIndex = 0;
+
+  function displayQuestion() {
+      if (currentQuestionIndex === questions.length){
+          alert("Quiz completed!")
+          document.querySelector(".btnEnd").style.display = "block" 
+          document.querySelector(".btnNext").style.display = "none" 
+          return;
+      }
+
+      const questionData = questions[currentQuestionIndex];
+      const questionElement = document.querySelector('.question');
+      const choicesElement = document.querySelector('.choices');
+  
+      questionElement.innerText = questionData.question;
+      choicesElement.innerHTML = '';
+      const answers = [...questionData.incorrect_answers, questionData.correct_answer];
+      answers.sort(() => Math.random() - 0.5); // Shuffle the answers
+      answers.forEach(answer => {
+          const li = document.createElement('li');
+          li.textContent = answer;
+          li.className = "list-choices"
+          choicesElement.appendChild(li); 
+      });
+
+      currentQuestionIndex++;
+      findAnswer([questionData]); 
+
+  }
+  
+  document.querySelector('.submit-button').addEventListener('click', displayQuestion);
+
+  document.querySelector('.btnNext').addEventListener('click', () => {
+      const choicesElements = document.querySelectorAll('.choices li');
+        choicesElements.forEach(choice => {
+            choice.style.pointerEvents = 'auto'; 
+            choice.style.backgroundColor = ''; 
+            choice.style.color = ''; 
+        });
+    });
+  
+  displayQuestion(); 
+}
+
+// -------------------------------------------------------------------------------------------------------------------
+
+let crtAns = 0
+
+function findAnswer(question) {
+  console.log(question);
+  const choicesElements = document.querySelectorAll('.choices li'); // Select all the choice elements
+
+
+  choicesElements.forEach(choiceElement => {
+      choiceElement.addEventListener('click', (event) => {
+          const selectedAnswer = event.target.textContent;
+          const correctAnswer = question[0].correct_answer;
+
+          // Disable further clicks
+          choicesElements.forEach(choice => {
+              choice.style.pointerEvents = 'none';
+          });
+
+          document.querySelector(".btnNext").addEventListener("click", ()=>{
+            choicesElements.forEach(choice => {
+              choice.style.pointerEvents = 'auto';
+          });
+          
+          })
+
+          if (selectedAnswer === correctAnswer) {
+              event.target.style.backgroundColor = "#28a745";
+              event.target.style.color = "white";
+              crtAns++
+              endCode(crtAns)
+              console.log("Correct Answer");
+          } else {
+              event.target.style.backgroundColor = "red";
+              event.target.style.color = "white";
+              console.log("Incorrect Answer");
+
+              // Highlight the correct answer
+              choicesElements.forEach(choice => {
+                  if (choice.textContent === correctAnswer) {
+                      choice.style.backgroundColor = "#28a745";
+                      choice.style.color = "white";
+                  }
+              });
+          }
+          
+      });
+  });
 
 }
 
+// -------------------------------------------------------------------------------------------------------------------------------
 
 
 document.querySelector(".btnEnd").addEventListener("click", () => {
@@ -139,62 +249,8 @@ document.querySelector(".startAgain").addEventListener("click", () => {
 })
 
 
-// --------------------------------------------------------------------------------------------------------------------------------------------
 
-function showQuestions(questions) {
-  if (questions.length === 0) {
-      alert("No questions available for the selected category and difficulty.");
-      return;
-  }
-
-  let currentQuestionIndex = 0;
-
-  function displayQuestion() {
-      if (currentQuestionIndex >= questions.length) {
-          alert("Quiz completed!");
-          document.querySelector(".btnEnd").style.display = "block" 
-          document.querySelector(".btnNext").style.display = "none" 
-          return;
-      }
-
-      const questionData = questions[currentQuestionIndex];
-      const questionElement = document.querySelector('.question');
-      const choicesElement = document.querySelector('.choices');
-
-      questionElement.innerText = questionData.question;
-      choicesElement.innerHTML = '';
-
-      const answers = [...questionData.incorrect_answers, questionData.correct_answer];
-      answers.sort(() => Math.random() - 0.5); // Shuffle the answers
-
-      answers.forEach(answer => {
-          const li = document.createElement('li');
-          const label = document.createElement('label');
-          const input = document.createElement('input');
-          input.type = 'radio';
-          input.name = 'answer';
-          input.value = answer;
-
-          label.appendChild(input);
-          label.appendChild(document.createTextNode(answer));
-          li.appendChild(label);
-          choicesElement.appendChild(li);
-      });
-
-      currentQuestionIndex++;
-  }
-
-  document.querySelector('.submit-button').addEventListener('click', displayQuestion);
-
-  // Initial call to show the first question
-  displayQuestion();
-}
-
-document.querySelector('.filter-button').addEventListener('click', filterTheData);
-
-
-// -------------------------------------------------------------------------------------------------------------------------------
-
+// -----------------------------------------------------------------------------------------------------------------------------------------
 
 //Caluclator
 function clearDisplay() {
@@ -215,16 +271,15 @@ function clearDisplay() {
   }
   
 
+//----------------------------------------------------------------------------------------------------------------------------
+function endCode(e) {
+  const cardRes = document.querySelector('.updatingInJs');
+  cardRes.innerHTML = ` 
+      <div class="Marks">Marks: <span>${e}</span> / <span>5</span> </div>
+      <div class="Percentage">${(100 * e) / 5}%</div>
+      <h3 class="Thanks">Thanks for Giving a Quiz</h3>
+      <div class="end">END..</div>
+  `
+}
 
-
-
-
-
-
-
-
-
-
-
-  
 
