@@ -336,62 +336,61 @@ body, html {
     }
   }
   
-
-  .guide-line-card{
+  .guide-line-card {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 900px;
-    width: 700px;
+    width: 90%; /* Change width to percentage for responsiveness */
     margin: 10rem auto;
     display: none;
     color: #000;
-  }
+}
 
-  .guide-line-card h3{
+.guide-line-card h3 {
     padding: 1.33rem;
     font-size: 1.45rem;
-  }
+}
 
-.guide-btn{
+.guide-btn {
     padding: .77rem;
     text-align: right;
 }
 
-  .guide-line-card ol{
+.guide-line-card ol {
     border-top: 1px solid #b8b5b5;
     border-bottom: 1px solid #b8b5b5;
     padding: 1rem;
-  }
+}
 
-  .guide-line-card li{
+.guide-line-card li {
     margin-left: 5%;
     padding: .22rem;
-  }
+}
 
-  .guide-line-card span{
+.guide-line-card span {
     color: blue;
     font-weight: 450;
-  }
+}
 
+.guide-con,
+.guide-exit {
+    padding: 12px 1.25rem;
+    cursor: pointer;
+}
 
-  .guide-con{
+.guide-con {
     background-color: #007BFF;
     color: #fff;
     border: none;
     outline: none;
     border-radius: .25rem;
-    padding: 12px 1.25rem;
-    cursor: pointer;
-  }
+}
 
-  .guide-exit{
+.guide-exit {
     background-color: #fff;
     color: #007BFF;
     border: 2px solid #007BFF;
     outline: none;
     border-radius: .25rem;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    cursor: pointer;
-  }
+}
